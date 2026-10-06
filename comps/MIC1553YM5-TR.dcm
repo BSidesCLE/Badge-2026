@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MIC1553YM5-TR
+D Timers & Support Products 500 kHz, 2.7V to 18V, "555" RC Timer/Oscillator with Shutdown
+K
+F https://www.mouser.cn/datasheet/2/268/MIC1551_53_IttyBitty_RC_Type_555_Timer_Oscillator_-3577958.pdf
+$ENDCMP
+#
+#End Doc Library

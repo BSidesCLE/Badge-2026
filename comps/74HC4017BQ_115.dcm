@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74HC4017BQ,115
+D 74HC(T)4017 - Johnson decade counter with 10 decoded outputs@en-us
+K
+F https://assets.nexperia.com/documents/data-sheet/74HC_HCT4017.pdf
+$ENDCMP
+#
+#End Doc Library

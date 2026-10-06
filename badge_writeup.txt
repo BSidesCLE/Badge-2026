@@ -1,0 +1,41 @@
+Making a event badge - Anthony G. - garciassolutions@gmail.com -- Event space in NYC @  https://matka.nyc
+
+1. Setup + Component picks
+- The overall design was very straight forward, create a event badge with a cassette front, and designated artwork for the back -- be creative.
+- Two separate badges needed to be made, one for the volunteers and one for the attendees.
+- And finally, add some LEDs and make it look nice.
+- LEDs, a battery, timer, and counter were selected to optimize runtime and production cost.
+
+2. Put it all together + Creativity
+- Having some playful LED illuminations was key to this project being a success. Two different display patterns were designed.
+  . Volunteers - Their cassettes will 'rewind'
+  . Attendees  - Their cassettes will 'play'
+- The timer sends a pulse to the counter, which in turn illuminates the LEDs.
+  . Attendee badges reset this counter upon startup to avoid unknown internal states. (Removes delay time if >6)
+- When designing the back graphic design, some stenography was added as an Easter Egg (see more below.)
+- Main electronic components apart from LEDs and power switch are located on the back of the device. They are centered within the artwork as to not disturb the imagery.
+
+3. Technical things
+- All components are SMD - no THT.
+- UV silkscreen was printed on the front and back of these boards.
+- Lanyard hole located at the top center of the boards.
+- ChatGPT used to generate artwork (seeded with supplied concept art.)
+- Kicad v.10 used to generate the schematic, pcb, and fabrication files.
+- 74HC4017BQ,115 counter, 74AUP1G74GT,115 flip-flop latch, 74AUP1G14GW,125 timer.
+- PCBWay was used to manufacture the PCBs, UV print the silkscreen designs on the front and back, and source and assemble the units. (https://pcbway.com/g/zR6YXM - halp plz)
+
+* Easter Egg *
+
+- Hints
+  . There is a space between each word.
+  . A well known plaintext cipher was used to encode a top secret message in the artwork.
+  . The key to decode the information is located on the badge itself. [Hint hint]
+  . Once this information was encoded, it was modified once more with another plaintext cipher (which the first is an extension of.)
+  . And lastly, the double encoded text was transposed.
+
+- Spoiler
+  . A top secret message of "Hack The Planet" was encoded using a Vigenère cipher with the key "ClevelandBsides"
+  . The output of this ciphertext then had a ROT-13 Ceaser cipher applied
+  . Finally the output was reversed
+  . Decode how-to: vigenere_decode(rot13(reverse([CIPHER_TEXT w. Spaces])), "ClevelandBsides");
+

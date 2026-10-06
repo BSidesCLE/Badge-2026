@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74AUP1G14GW,125
+D 74AUP1G14 - Low-power Schmitt trigger inverter@en-us
+K
+F https://assets.nexperia.com/documents/data-sheet/74AUP1G14.pdf
+$ENDCMP
+#
+#End Doc Library
